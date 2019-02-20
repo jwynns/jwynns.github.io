@@ -38,7 +38,8 @@
         "bootstrap/mixins/_float.scss",
         "_site-base.scss",
         "_site-navbar.scss",
-        "_site-blocks.scss"
+        "_site-blocks.scss",
+        "_contact-page.scss"
     ],
     "names": [],
     "file": "style.css"
