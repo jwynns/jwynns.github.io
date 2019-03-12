@@ -8,18 +8,18 @@
 	}
 
 	.site-navbar-top {
-		font-size: $font-size-base - .2rem;
+		font-size: $font-size-base - 0.2rem;
 	}
 }
-.site-navbar-top, .site-navbar {
-	
-	border-bottom: 1px solid rgba($black, .1);
+.site-navbar-top,
+.site-navbar {
+	border-bottom: 1px solid rgba($black, 0.1);
 }
 .site-navbar {
 	margin-bottom: 0px;
 	width: 100%;
 	border-bottom: none;
-	
+
 	.site-logo {
 		font-weight: 200;
 		a {
@@ -29,9 +29,7 @@
 	}
 
 	.site-navigation {
-		
 		.site-menu {
-			
 			margin-bottom: 0;
 			.active {
 				> a {
@@ -39,7 +37,7 @@
 				}
 			}
 			a {
-				text-decoration: none!important;
+				text-decoration: none !important;
 				font-size: 15px;
 				display: inline-block;
 			}
@@ -49,10 +47,10 @@
 				> a {
 					padding: 10px 10px;
 					text-transform: uppercase;
-					letter-spacing: .05em;
-					color: rgba($black, .6);
+					letter-spacing: 0.05em;
+					color: rgba($black, 0.6);
 					font-size: 15px;
-					text-decoration: none!important;
+					text-decoration: none !important;
 					&:hover {
 						color: $black;
 					}
@@ -68,10 +66,10 @@
 				position: relative;
 				> a {
 					position: relative;
-					padding-right: 20px;						
+					padding-right: 20px;
 					&:before {
 						position: absolute;
-						content: "\e313";
+						content: '\e313';
 						font-size: 16px;
 						top: 50%;
 						right: 0;
@@ -86,7 +84,7 @@
 					position: absolute;
 					text-align: left;
 					// border-top: 2px solid $primary;
-					box-shadow: 0 2px 10px -2px rgba(0,0,0,.25);
+					box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.25);
 					border-left: 1px solid $gray-4;
 					border-right: 1px solid $gray-4;
 					border-bottom: 1px solid $gray-4;
@@ -95,14 +93,14 @@
 					margin-left: 0px;
 					background: $white;
 					transition: 0.2s 0s;
-				
+
 					&.arrow-top {
 						position: absolute;
 						&:before {
 							bottom: 100%;
 							left: 20%;
 							border: solid transparent;
-							content: " ";
+							content: ' ';
 							height: 0;
 							width: 0;
 							position: absolute;
@@ -113,9 +111,8 @@
 							border-bottom-color: $white;
 							border-width: 10px;
 							margin-left: -10px;
-						}	
+						}
 					}
-					
 
 					a {
 						// font-size: 16px;
@@ -126,7 +123,7 @@
 					}
 					.active {
 						> a {
-							color: $black!important;
+							color: $black !important;
 						}
 					}
 					> li {
@@ -146,15 +143,18 @@
 						&.has-children {
 							> a {
 								&:before {
-									content: "\e315";
+									content: '\e315';
 									right: 20px;
 								}
 							}
-							> .dropdown, > ul {
+							> .dropdown,
+							> ul {
 								left: 100%;
 								top: 0;
 							}
-							&:hover, &:active, &:focus {
+							&:hover,
+							&:active,
+							&:focus {
 								> a {
 									// background: lighten($gray-4, 2%);
 									color: $primary;
@@ -166,27 +166,28 @@
 				a {
 					text-transform: uppercase;
 				}
-				&:hover, &:focus, &:active {
+				&:hover,
+				&:focus,
+				&:active {
 					> a {
 						color: $black;
 					}
 				}
-				&:hover, &:focus, &:active {
+				&:hover,
+				&:focus,
+				&:active {
 					cursor: pointer;
 					> .dropdown {
 						transition-delay: 0s;
 						margin-top: 0px;
 						visibility: visible;
 						opacity: 1;
-
-				
 					}
 				}
 			}
 		}
 	}
 }
-
 
 // mobile menu
 
@@ -198,10 +199,10 @@
 	padding-top: 20px;
 	background: $white;
 	height: calc(100vh);
-	
+
 	transform: translateX(110%);
-	box-shadow: -10px 0 20px -10px rgba(0,0,0,.1);
-	transition: .3s all ease-in-out;
+	box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+	transition: 0.3s all ease-in-out;
 
 	.offcanvas-menu & {
 		transform: translateX(0%);
@@ -212,7 +213,7 @@
 		float: left;
 		padding-left: 20px;
 		padding-right: 20px;
-		
+
 		.site-mobile-menu-close {
 			float: right;
 			margin-top: 8px;
@@ -223,7 +224,7 @@
 				padding-right: 0px;
 				line-height: 1;
 				cursor: pointer;
-				transition: .3s all ease;
+				transition: 0.3s all ease;
 				&:hover {
 					color: $gray-1;
 				}
@@ -249,13 +250,12 @@
 	.site-mobile-menu-body {
 		// height: 400px;
 		overflow-y: scroll;
-  	-webkit-overflow-scrolling: touch;
+		-webkit-overflow-scrolling: touch;
 		position: relative;
 		padding: 20px;
 
 		height: calc(100vh - 52px);
 		padding-bottom: 150px;
-
 	}
 	.site-nav-wrap {
 		padding: 0;
@@ -301,17 +301,17 @@
 			&:before {
 				font-size: 12px;
 				z-index: 20;
-				font-family: "icomoon";
-				content: "\f078";
+				font-family: 'icomoon';
+				content: '\f078';
 				position: absolute;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%) rotate(-180deg);
-				transition: .3s all ease;
+				transition: 0.3s all ease;
 			}
 			&.collapsed {
 				&:before {
-					transform: translate(-50%, -50%);	
+					transform: translate(-50%, -50%);
 				}
 			}
 		}
@@ -320,7 +320,7 @@
 			position: relative;
 			float: left;
 			width: 100%;
-			
+
 			> a {
 				padding-left: 20px;
 				font-size: 20px;
@@ -342,13 +342,12 @@
 							display: block;
 							> a {
 								font-size: 16px;
-								padding-left: 60px;			
+								padding-left: 60px;
 							}
 						}
 					}
 				}
 			}
 		}
-		
 	}
 }
