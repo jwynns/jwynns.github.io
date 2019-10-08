@@ -1,22 +1,22 @@
 {
-  "name": "portfolio",
+  "name": "taxi-2",
   "version": "1.0.0",
-  "description": "Portfolio project",
+  "description": "Taxi site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch scss -o css"
+    "scss": "node-sass --watch scss -o css",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jwynns/pptemp.git"
+    "url": "git+https://github.com/jwynns/Taxi-2.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jwynns/pptemp/issues"
+    "url": "https://github.com/jwynns/Taxi-2/issues"
   },
-  "homepage": "https://github.com/jwynns/pptemp#readme",
+  "homepage": "https://github.com/jwynns/Taxi-2#readme",
   "dependencies": {
     "node-sass": "^4.12.0"
   }
